@@ -2,8 +2,9 @@
 
 #define CONSTS
 
-#define SCREEN_WIDTH 1600
-#define SCREEN_HEIGHT 900
+#define SCREEN_WIDTH 1366
+#define SCREEN_HEIGHT 768
+
 #define TITLE "PeRSoNa 5: TeXt-BAseD RoYalE"
 
 #define NUM_DAYS 60

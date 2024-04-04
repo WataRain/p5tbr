@@ -22,7 +22,8 @@ int main()
     data.yen = 0;
 
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, TITLE);
-    SetTargetFPS(30);
+    InitAudioDevice();
+    SetTargetFPS(60);
     printf("Starting TitleScreen...\n");
     mode = TitleScreen(&frame);
     printf("mode: %d\n", mode);
