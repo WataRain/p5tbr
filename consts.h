@@ -16,7 +16,9 @@
 enum modes
 {
     NEW_GAME,
-    LOAD_GAME
+    LOAD_GAME,
+    QUIT_GAME,
+    GAME_CREDITS
 };
 
 enum confidants

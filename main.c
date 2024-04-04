@@ -12,6 +12,7 @@ void GameLoop(struct Data *data);
 int main()
 {
     int frame = 0;
+    bool quit = false;
     struct Data data;
     struct Place places[NUM_PLACES];
     Mode mode;
@@ -35,14 +36,21 @@ int main()
         case NEW_GAME:
             EventIntro();
             break;
+        case QUIT_GAME:
+            quit = true;
+            break;
+        case GAME_CREDITS:
+            break;
     }
 
-    // GameLoop(&data);
-
-    // ???
-    if (data.day == NUM_DAYS)
+    if (!quit)
     {
-        EventEnding(data);
+        // GameLoop(&data);
+        // ???
+        if (data.day == NUM_DAYS)
+        {
+            EventEnding(data);
+        }
     }
 
     CloseWindow();

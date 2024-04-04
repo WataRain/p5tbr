@@ -74,7 +74,7 @@ Mode TitleScreen(int *frame)
     // Morgana
     unsigned int frameDataOffset = 0;
     unsigned int currentAnimFrame = 0;
-    int animFrames = 100;
+    int animFrames = 100; // No idea if lucky guess or if this works
     const unsigned int frameDelay = 2;
     Image ANIM_MORGANA = LoadImageAnim("resources/sprite/morgana_by_molegato.gif", &animFrames);
     Texture2D TEX_MORGANA = LoadTextureFromImage(ANIM_MORGANA);
